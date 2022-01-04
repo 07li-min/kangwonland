@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,time,figure,article,nav,header,footer,hgroup,video,audio,aside,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; vertical-align: baseline; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+ol,ul {list-style: none;}
+a {color: inherit; text-decoration: none;}
+img {max-width: 100%; vertical-align: middle;}
+button{cursor: pointer; background-color: transparent; border: transparent;}
+
+
+body{
+  color: #333;
+  font-family: 'Noto Sans KR', 'Roboto';  
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.hide-text { color: transparent; border: none; background-color: transparent; text-shadow: none; font: 0/0 a; }
+
+::-webkit-scrollbar
+
+
+/* font */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: none;
+  font-weight: 400;
+  src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: none;
+  font-weight: 500;
+  src: url(../font/Roboto/Roboto-Light.ttf);
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: none;
+  font-weight: 600;
+  src: url(../font/Roboto/Roboto-Medium.ttf);
+}
+
+
+
+
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: none;
+  font-weight: 300;
+  src: url(../font/NotoSans_KR/NotoSansKR-Light.otf);
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: none;
+  font-weight: 600;
+  src: url(../font/NotoSans_KR/NotoSansKR-Medium.otf);
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: none;
+  font-weight: 700;
+  src: url(../font/NotoSans_KR/NotoSansKR-Bold.otf);
+}

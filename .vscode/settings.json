@@ -1,0 +1,19 @@
+{
+  // "liveServer.settings.port": 5501
+  "liveSassCompile.settings.formats" : [ 
+    // 기본값입니다. 
+    { 
+        "format" : "expanded" , 
+        "extensionName" : ".css" , 
+        "savePath" : "~/../css/" 
+    } , 
+    // 더 복잡한 
+    { 
+        "format" : "compressed" ,
+        "savePath" : "~/../css/" 
+    },
+  ],
+  "liveSassCompile.settings.includeItems":[
+    "/scss/*.scss"
+  ]
+}
