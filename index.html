@@ -4,62 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kangwon Land: 강원랜드</title>
+  <title>KangwonLand</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/css_libs/swiper(4.5.1).css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/variables.css">
-  <link rel="stylesheet" href="./css/mixin.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
   <script src="./js/lib/jquery-3.6.0.js"></script>
   <script src="./js/lib/swiper(4.5.1).min.js"></script>
   <script src="./js/index.js"></script>
 </head>
 <body>
   <div class="wrap">
-  <!-- popup -->
-  <div class="popup-1" id="layer_popup" style="visibility: visible;">
-    <div class="popup-box">
-      <div>
-          <a href="#"><img src="./img/popup/popup-img1.png" usemap="#popup" alt="event page"></a>
-      </div>
+  <!-- popup1 -->
+  <div class="popup popup-1 active" id="popup_1">
+    <div class="popup-box ">
+      <a href="#"><img src="./img/popup/popup-img1.png" ></a>
       <form name="pop_form">
         <div>
           <input type="checkbox" name="chkbox" value="checkbox" id='chkbox' >
           <label for="chkbox">&nbsp&nbsp오늘 하루동안 보지 않기</label>
         </div>
-        <div><a href="javascript:closePop();">닫기</a></div>    
+        <button class="close_pop" type="button">닫기</button>    
       </form>
 	</div>
   </div>
-    <!-- 팝업쿠키 -->
-  <script>
-    function setCookie( name, value, expiredays ) {
-        var todayDate = new Date();
-        todayDate.setDate( todayDate.getDate() + expiredays ); 
-        document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
-    }
-    function closePop() {
-        if ( document.pop_form.chkbox.checked ){
-            setCookie( "maindiv", "done" , 1 );
-        }
-        document.all['layer_popup'].style.visibility = "hidden";
-    }
-  </script>
-  <script>
-    cookiedata = document.cookie;   
-    if ( cookiedata.indexOf("maindiv=done") < 0 ){     
-        document.all['layer_popup'].style.visibility = "visible";
-    }
-    else {
-        document.all['layer_popup'].style.visibility = "hidden";
-    }
-  </script>
-
-  <!-- 팝업2 -->
-  <div class="popup-2" id="layer_popup2" style="visibility: visible;">
+  <div class="popup popup-2 active" id="popup_2">
     <div class="popup-box">
       <div>
           <a href="#"><img src="./img/popup/popup-img2.jpg" usemap="#popup" alt="event page"></a>
@@ -69,34 +38,10 @@
           <input type="checkbox" name="chkbox2" value="checkbox" id='chkbox2' >
           <label for="chkbox2">&nbsp&nbsp오늘 하루동안 보지 않기</label>
         </div>
-        <div><a href="javascript:closePop();">닫기</a></div>    
+        <button class="close_pop" type="button">닫기</button>    
       </form>
-	</div>
+    </div>
   </div>
-    <!-- 팝업쿠키 -->
-    <script>
-      function setCookie( name, value, expiredays ) {
-          var todayDate2 = new Date();
-          todayDate2.setDate( todayDate2.getDate() + expiredays ); 
-          document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate2.toGMTString() + ";"
-      }
-      function closePop() {
-          if ( document.pop_form2.chkbox2.checked ){
-              setCookie( "maindiv2", "done2" , 1 );
-          }
-          document.all['layer_popup2'].style.visibility = "hidden";
-      }
-    </script>
-    <script>
-      cookiedata = document.cookie;   
-      if ( cookiedata.indexOf("maindiv2=done2") < 0 ){     
-          document.all['layer_popup2'].style.visibility = "visible";
-      }
-      else {
-          document.all['layer_popup2'].style.visibility = "hidden";
-      }
-    </script>
-  
     <!-- header -->
     <header class="hd">
       <nav class="top-hd">
@@ -116,7 +61,6 @@
         <!-- pc-menu -->
         <nav class="pc-hd">
           <ul class="gnb">
-            <!-- 강원랜드 -->
             <li class="dep1">
             <a class="tit" href="#">강원랜드</a>
               <div class="dep2">
@@ -169,7 +113,6 @@
                 </div>
               </div>
             </li>
-            <!-- 사업분야 -->
             <li class="dep1">
               <a class="tit" href="#">사업분야</a>
               <div class="dep2">
@@ -214,7 +157,6 @@
                 </div>
               </div>
             </li>
-            <!-- 투자정보 -->
             <li class="dep1">
               <a class="tit" href="#">투자정보</a>
               <div class="dep2">
@@ -488,7 +430,6 @@
             <button class="off">ENG</button>
           </div>
           <ul class="mob-gnb">
-            <!-- 강원랜드 -->
             <li class="m-dep1">
               <a class="tit" href="#">강원랜드</a>
               <ul class="m-dep2">
@@ -536,7 +477,6 @@
                 </li>
               </ul>
             </li>
-            <!-- 사업분야 -->
             <li class="m-dep1">
               <a class="tit" href="#">사업분야</a>
               <ul class="m-dep2">
@@ -576,7 +516,6 @@
                 </li>
               </ul>
             </li>
-            <!-- 투자정보 -->
             <li class="m-dep1">
               <a class="tit" href="#">투자정보</a>
               <ul class="m-dep2">
@@ -830,7 +769,6 @@
             </li>
           </ul>
         </nav>
-        <!-- mob-btn-->
         <div class="mob-btn">
           <button>
             <span class="bar bar1"></span>
@@ -1088,7 +1026,6 @@
             <li><img src="./img/icon/ski.png" alt="icon6"></li>
           </ul>
           <div class="family">
-            <!-- <p class="tit">관련사이트 바로가기</p> -->
             <p class="tit">패밀리사이트</p>
             <ul class="fam-box">
               <li><a href="#">하이원리조트</a></li>
