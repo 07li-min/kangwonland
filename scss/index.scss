@@ -425,7 +425,6 @@ html, body{
     @include pos-center;
     position: absolute;
     text-align: center;
-    // width: 100%;
     width: calc(100% - 40px);
     z-index: 1;
     
@@ -631,7 +630,6 @@ html, body{
     }
   }
   .copyright{
-    // margin-top: 20px;
     font-weight: 300;
     p:nth-child(1){font-weight: 500;}
     p:nth-child(2){padding-top: 5px;}
@@ -860,10 +858,6 @@ html, body{
           font-size: 21px;
           font-weight: 600;
           padding: 0 20px;
-          // &.active{
-          //   color: $color-green2;
-          //   box-shadow: 0 5px 5px rgba(0,0,0,0.05), 0 1px 1px rgba(0,0,0,0.05);
-          // }
         }
         &.active {
           .tit {
@@ -923,9 +917,6 @@ html, body{
         padding: 0;
       }
       .bar{
-        // height: 2px; 
-        // background-color: #fff;
-        // width: 30px;
         margin: 2px 0; 
         width: 5px;
         height: 5px; 
@@ -1021,7 +1012,6 @@ html, body{
       .reveal{
         position: absolute;
         bottom: 100%;
-        // left: 80%;
         left: auto;
         right: 0;
       .more{

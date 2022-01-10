@@ -15,7 +15,6 @@ $(document).ready(function(){
   $(dep3Target).slideUp();
 
   $(dep1Target).on('click', function(e){
-    console.log('on')
     e.preventDefault();
     $(this).closest(dep1).find(dep2Target).slideToggle();
     $(this).closest(dep1).siblings().find(dep2Target).slideUp();
@@ -99,17 +98,14 @@ $(document).ready(function(){
 
   // popup
   $('.close_pop').click(function(){
-    console.log('닫기', this);
     let tmpPop = $(this).closest('.popup');
     closePop(tmpPop);
   });
 
   function setCookie( name, value, expiredays ) {
-    // console.log('setCookie', name);
     let todayDate = new Date();
     todayDate.setDate( todayDate.getDate() + expiredays ); 
     document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
-    // console.log('set Cookie', document.cookie);
   }
 
   function closePop(popElem) {
