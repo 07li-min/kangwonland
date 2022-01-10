@@ -49,7 +49,7 @@ html, body{
   &:hover::before{width: 100%;}
 }
 
-// hd
+// header
 .hd{
   position: absolute;
   top: 0;
@@ -74,7 +74,7 @@ html, body{
         color: $color-white;
         position: relative;
         &+li::after{
-          content: "";
+          content: "/";
           position: absolute;
           left: -5px;
           color: $color-white;
@@ -1139,6 +1139,16 @@ html, body{
 @media screen and (max-width:480px){
   .big-tit{font-size: 55px;}
   .more{bottom: -80px;}
+
+  .popup{
+    &.popup-1 {
+      .popup-box {
+        width: 300px;
+      }
+    }
+  }
+
+
   // news
   .news{
     margin-top: 70px;
